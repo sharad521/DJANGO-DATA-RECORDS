@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>database table</title>
+</head>
+<body>
+    <center>
+        <h1>how to create a table </h1>
+        <h1><a href="insert">create a table</a></h1>
+    
+    <table border="1">
+        <tr>
+            <th>Employee _id</th>
+            <th>Employee_name</th>
+            <th>Occupation</th>
+            <th>Salary</th>
+            <th>gender</th>
+        </tr>
+        {% for empmodel in empmodels %}
+        <tr>
+            <th>{{empmodel.id}} </th>
+            <th>{{empmodel.empname}} </th>
+            <th>{{empmodel.email}} </th>
+            <th>{{empmodel.occupation}} </th>
+            <th>{{empmodel.salary}} </th>
+            <th>{{empmodel.gender}} </th>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>
